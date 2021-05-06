@@ -13,6 +13,7 @@ function diagonalDifference(matrix) {
     diagonalLeftToRight += matrix[i][i];
     // right-to-left diagonal.
     diagonalRightToLeft += matrix[length - 1 - i][i];
+    console.log(diagonalRightToLeft);
   }
   // return value using Math.abs() to get the absolute difference.
   return Math.abs(diagonalLeftToRight - diagonalRightToLeft);
@@ -21,5 +22,5 @@ function diagonalDifference(matrix) {
 diagonalDifference([
   [1, 2, 3],
   [4, 5, 6],
-  [9, 8, 9],
+  [7, 8, 9],
 ]);
